@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="{{DATA:IMAGE:IMAGE_3}}" rel="icon" type="image/png"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus_Jakarta_Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary": "#4F6DFF",
+                    "on-primary": "#ffffff",
+                    "primary-container": "#E0E7FF",
+                    "on-primary-container": "#4F6DFF",
+                    "secondary": "#006a61",
+                    "surface": "#f7f9fe",
+                    "surface-variant": "#e4e1ee",
+                    "on-surface": "#1b1b24",
+                    "outline": "#777587",
+                    "outline-variant": "#c7c4d8",
+                    "text-main": "#1E293B",
+                    "text-muted": "#64748B",
+                    "urgency-critical": "#EF4444",
+                    "urgency-safe": "#10B981",
+                    "surface-container": "#f1f4f9",
+                    "surface-container-low": "#f1f4f9",
+                    "surface-container-lowest": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "8px",
+                    "lg": "8px",
+                    "xl": "12px",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "sm": "8px",
+                    "xl": "32px",
+                    "lg": "24px",
+                    "container-max": "600px",
+                    "md": "16px",
+                    "unit": "4px",
+                    "xs": "4px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Manrope"],
+                    "label-caps": ["Manrope"],
+                    "body-md": ["Manrope"],
+                    "h1": ["Plus Jakarta Sans"],
+                    "h2": ["Plus Jakarta Sans"],
+                    "deadline-pill": ["Manrope"]
+            },
+            "fontSize": {
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "h1": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "h2": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "deadline-pill": ["14px", {"lineHeight": "1", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .onboarding-shadow {
+            box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body-md text-text-main min-h-screen flex flex-col">
+<header class="bg-white dark:bg-slate-950 backdrop-blur-md fixed top-0 w-full z-50 border-b border-slate-100 dark:border-slate-800 shadow-sm">
+<div class="flex justify-between items-center h-16 px-16 max-w-7xl mx-auto w-full font-['Plus_Jakarta_Sans'] tracking-tight">
+<div class="flex items-center gap-2">
+<img alt="ElectionPath Logo" class="w-8 h-8 object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uiVAmjE3mx2DSa9CmswB5wnTRyjBKT5Hzf2UQsqPcwiMgfiKe6wEX4t6NjSkS36Favl997t2YWmkG26AJ27K5CNftEWAV_DbHFk4cTzyGPrstJdhGyRrVC2ynRgv7WhYH4tSgUC0Qjx4YulflZeob_f3AocnhNB08jAByExDQaJXC6Ch6RCPjrXEN08MRcO2pY8P9JvTjBWsil1f9Pgt41vb7gopHFFmoKTmBnu5GT-9VX4isHBV5wG0Sc5ft0T9oKV2ps2Y5OzDw"/>
+<div class="text-xl font-extrabold text-[#4F6DFF] dark:text-white">ElectionPath</div>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-[#4F6DFF] font-bold border-b-2 border-[#4F6DFF] pb-1" href="#">Voter Registration</a>
+<a class="text-slate-500 dark:text-slate-400 font-medium hover:text-[#4F6DFF] dark:hover:text-white transition-colors duration-200" href="#">Deadlines</a>
+<a class="text-slate-500 dark:text-slate-400 font-medium hover:text-[#4F6DFF] dark:hover:text-white transition-colors duration-200" href="#">Polling Places</a>
+<a class="text-slate-500 dark:text-slate-400 font-medium hover:text-[#4F6DFF] dark:hover:text-white transition-colors duration-200" href="#">My Ballot</a>
+</div>
+<button class="bg-[#4F6DFF] text-white px-6 py-2 rounded-lg font-semibold hover:opacity-90 active:opacity-80 transition-all">Sign In</button>
+</div>
+</header>
+<main class="flex-grow pt-32 pb-24 px-6 md:px-12 flex flex-col items-center justify-center max-w-4xl mx-auto w-full">
+<div class="text-center mb-12 space-y-4">
+<h1 class="font-h1 text-h1 text-on-surface tracking-tight">Your simple guide to voting.</h1>
+<p class="font-body-lg text-text-muted max-w-md mx-auto">We'll help you navigate the process step-by-step, so you can participate with confidence.</p>
+</div>
+<section class="w-full space-y-12">
+<div class="space-y-6">
+<h2 class="font-h2 text-h2 text-on-surface text-center md:text-left">When is your election?</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<button class="group flex flex-col items-center justify-center p-8 bg-white border border-outline-variant rounded-xl hover:border-primary hover:bg-surface-container-low transition-all onboarding-shadow text-center">
+<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center mb-4 group-hover:bg-primary-container transition-colors">
+<span class="material-symbols-outlined text-3xl text-primary" data-icon="location_on">location_on</span>
+</div>
+<span class="font-h2 text-lg text-on-surface">Local</span>
+<p class="font-body-md text-text-muted mt-1">City and County</p>
+</button>
+<button class="group flex flex-col items-center justify-center p-8 bg-white border border-outline-variant rounded-xl hover:border-primary hover:bg-surface-container-low transition-all onboarding-shadow text-center">
+<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center mb-4 group-hover:bg-primary-container transition-colors">
+<span class="material-symbols-outlined text-3xl text-primary" data-icon="account_balance">account_balance</span>
+</div>
+<span class="font-h2 text-lg text-on-surface">State</span>
+<p class="font-body-md text-text-muted mt-1">Governor and Legislature</p>
+</button>
+<button class="group flex flex-col items-center justify-center p-8 bg-white border border-outline-variant rounded-xl hover:border-primary hover:bg-surface-container-low transition-all onboarding-shadow text-center">
+<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center mb-4 group-hover:bg-primary-container transition-colors">
+<span class="material-symbols-outlined text-3xl text-primary" data-icon="how_to_vote">how_to_vote</span>
+</div>
+<span class="font-h2 text-lg text-on-surface">Primary</span>
+<p class="font-body-md text-text-muted mt-1">Party Nominees</p>
+</button>
+<button class="group flex flex-col items-center justify-center p-8 bg-white border-2 border-primary bg-surface-container-low rounded-xl transition-all onboarding-shadow text-center relative overflow-hidden">
+<div class="absolute top-2 right-2">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div class="w-16 h-16 rounded-full bg-primary-container flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-3xl text-primary" data-icon="stars" style="font-variation-settings: 'FILL' 1;">stars</span>
+</div>
+<span class="font-h2 text-lg text-on-surface">General</span>
+<p class="font-body-md text-text-muted mt-1">Presidential and Federal</p>
+</button>
+</div>
+</div>
+<div class="space-y-6">
+<h2 class="font-h2 text-h2 text-on-surface text-center md:text-left">Which state are you in?</h2>
+<div class="relative max-w-2xl mx-auto md:mx-0">
+<select class="w-full appearance-none bg-white border border-outline-variant rounded-lg px-6 py-4 font-body-lg text-on-surface focus:ring-2 focus:ring-primary focus:border-primary transition-all cursor-pointer">
+<option disabled="" selected="" value="">Choose your state</option>
+<option value="AL">Alabama</option>
+<option value="AK">Alaska</option>
+<option value="AZ">Arizona</option>
+<option value="CA">California</option>
+<option value="CO">Colorado</option>
+<option value="FL">Florida</option>
+<option value="GA">Georgia</option>
+<option value="NY">New York</option>
+<option value="TX">Texas</option>
+<option value="WA">Washington</option>
+</select>
+<div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-primary">
+<span class="material-symbols-outlined" data-icon="expand_more">expand_more</span>
+</div>
+</div>
+</div>
+<div class="flex justify-center md:justify-start pt-8">
+<button class="bg-primary text-on-primary font-h2 text-xl px-12 py-5 rounded-xl shadow-lg hover:shadow-xl hover:opacity-95 transform active:scale-95 transition-all flex items-center gap-3">
+                    Show My Election Path
+                    <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</section>
+</main>
+<footer class="bg-slate-50 dark:bg-slate-900 w-full rounded-none border-t border-slate-200 dark:border-slate-800 mt-auto">
+<div class="py-12 px-16 flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto font-['Plus_Jakarta_Sans'] text-sm">
+<div class="flex flex-col items-center md:items-start gap-2">
+<div class="flex items-center gap-2">
+<img alt="Logo" class="w-6 h-6 object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uiVAmjE3mx2DSa9CmswB5wnTRyjBKT5Hzf2UQsqPcwiMgfiKe6wEX4t6NjSkS36Favl997t2YWmkG26AJ27K5CNftEWAV_DbHFk4cTzyGPrstJdhGyRrVC2ynRgv7WhYH4tSgUC0Qjx4YulflZeob_f3AocnhNB08jAByExDQaJXC6Ch6RCPjrXEN08MRcO2pY8P9JvTjBWsil1f9Pgt41vb7gopHFFmoKTmBnu5GT-9VX4isHBV5wG0Sc5ft0T9oKV2ps2Y5OzDw"/>
+<span class="text-lg font-bold text-slate-900 dark:text-white">ElectionPath</span>
+</div>
+<p class="text-slate-600 dark:text-slate-400">© 2024 ElectionPath. Ensuring civic clarity and trust.</p>
+</div>
+<div class="flex gap-8 mt-6 md:mt-0">
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors" href="#">Terms of Service</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors" href="#">Accessibility</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors" href="#">Contact</a>
+</div>
+</div>
+</footer>
+<nav class="fixed bottom-0 w-full z-50 border-t md:hidden bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-800 shadow-[0_-2px_10px_rgba(0,0,0,0.05)]">
+<div class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 py-2 pb-safe">
+<a class="flex flex-col items-center justify-center text-[#4F6DFF] dark:text-[#4F6DFF] bg-blue-50 dark:bg-blue-900/20 rounded-lg px-3 py-1" href="#">
+<span class="material-symbols-outlined" data-icon="map" style="font-variation-settings: 'FILL' 1;">map</span>
+<span class="text-[11px] font-medium font-['Plus_Jakarta_Sans']">Journey</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 active:bg-slate-50 dark:active:bg-slate-800" href="#">
+<span class="material-symbols-outlined" data-icon="smart_toy">smart_toy</span>
+<span class="text-[11px] font-medium font-['Plus_Jakarta_Sans']">AI Assistant</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 active:bg-slate-50 dark:active:bg-slate-800" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="text-[11px] font-medium font-['Plus_Jakarta_Sans']">Profile</span>
+</a>
+</div>
+</nav>
+<div class="fixed top-0 left-0 w-full h-full pointer-events-none opacity-[0.03] z-[100]" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBt7pDphluzSsW8iBHwbrk-pJ_ZCqMqAmQM6NatT8fHBJ7dtnWxy-Ua2XBj8Z7vFoXbpUgGnM0G_0JVYNDuE3Ay616bFaQvQSSgkAQ7IPPk_byHRsWlb__yu1nljKZ2isw1RBQ2IhKxUF96rFZi6IYPqqbFgdkhXTU2gMjh7nm81efbKd_0m79AFstqSjxzRQsOv93I5ExdR5qDeOtcd0FRJ3TSM2LMZoGVr5vBcXgn2C-NwQVfRhQAvu8PqC-nb3HZr6jt186ZrElU');"></div>
+</body></html>
