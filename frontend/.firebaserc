@@ -1,6 +1,7 @@
 {
   "projects": {
-    "v1": "h2s-challenge-girish"
+    "v1": "h2s-challenge-girish",
+    "default": "h2s-challenge-girish"
   },
   "targets": {},
   "etags": {}
